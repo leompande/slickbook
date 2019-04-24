@@ -1,3 +1,3 @@
-# Note Book
+# Slick Book
 
 Android note book app.
