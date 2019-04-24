@@ -1,3 +1,3 @@
-# note_book
+# Note Book
 
 Android note book app.
