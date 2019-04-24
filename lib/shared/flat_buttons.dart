@@ -20,7 +20,7 @@ class PrimaryFlatButton extends StatelessWidget {
       onTap: () {},
       child: FlatButton(
         icon: icon,
-        label: 'Sign in',
+        label: '${label}',
         textColor: textColor,
         buttonColor: buttonColor,
       ),
@@ -113,15 +113,21 @@ class DangerOutlineFlatButton extends StatelessWidget {
   String label;
   Color textColor = Colors.red;
   Color buttonColor = Colors.red;
+  dynamic width;
+  dynamic height;
+  dynamic padding;
   Function() onTap;
 
-  DangerOutlineFlatButton({this.icon, this.label,this.onTap});
+  DangerOutlineFlatButton({this.width, this.height,this.padding, this.icon, this.label,this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: ()=> onTap(),
       child: FlatOutlineButton(
+        width: width,
+        height: height,
+        padding: padding,
         icon: icon,
         label: label,
         textColor: textColor,
@@ -137,18 +143,23 @@ class FlatOutlineButton extends StatelessWidget {
   String label;
   Color textColor;
   Color buttonColor;
+  dynamic width;
+  dynamic height;
+  dynamic padding;
 
-  FlatOutlineButton({this.icon, this.label, this.textColor, this.buttonColor});
+
+  FlatOutlineButton({this.width, this.height,this.padding,this.icon, this.label, this.textColor, this.buttonColor});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 250.0,
+      width: width,
+      height: height,
       decoration: BoxDecoration(
         border: Border.all(color: buttonColor, width: 2.0),
 //        color: Colors.white,
       ),
-      padding: EdgeInsets.all(20.0),
+      padding: EdgeInsets.all(padding),
       child: Row(
         children: <Widget>[
           Icon(
