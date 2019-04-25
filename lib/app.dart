@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:note_book/screens/login_form.dart';
 import 'package:note_book/screens/note_list.dart';
 import 'package:note_book/screens/note_update.dart';
+import 'package:note_book/screens/note_add.dart';
 import './screens/login_screen.dart';
 
 class App extends StatelessWidget {
@@ -15,6 +16,7 @@ class App extends StatelessWidget {
           '/': (context) => LoginScreen(),
           '/login_form': (context) => LoginForm(),
           '/note_list': (context) => NoteList(),
+          '/note_add': (context) => NoteAdd(),
           '/note_update': (context) => NoteUpdate()
         },
         title: 'SlickBook',

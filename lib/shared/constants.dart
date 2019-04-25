@@ -5,6 +5,7 @@
 const MAIN_TITLE = 'SlickBook';
 const APP_MOTTO = 'Let\'s put it in writings';
 
+const ADD_NOTE_TITLE = 'New Note';
 const UPDATE_NOTE_TITLE = 'Notes Update';
 const LIST_NOTE_TITLE = 'Notes';
 
@@ -22,7 +23,8 @@ const SIGN_IN = 'Sign in';
 const to_login_form = '/login_form';
 const to_login_screen = '/login_screen';
 const to_note_list = '/note_list';
-const to_note_update = '/note_udate';
+const to_note_update = '/note_update';
+const to_note_add = '/note_add';
 
 /**
  * Images and icons
